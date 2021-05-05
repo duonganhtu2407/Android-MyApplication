@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quan Ly Nhan Vien"
+            android:textSize="30dp"
+            android:textColor="@android:color/background_light"
+            android:gravity="center"
+            android:background="@android:color/holo_green_dark"
+            >
+        </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma NV:"
+            android:textSize="30dp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/edit_manv"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:hint="nhap ma nv"
+            android:layout_height="wrap_content"
+           android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten NV:"
+            android:textSize="30dp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/edit_tennv"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:hint="nhap ten nv"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gioi Tinh"
+            android:textSize="30dp"
+            ></TextView>
+        <RadioGroup
+            android:id="@+id/rdg_gioitinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textSize="20dp"
+                >
+
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nu"
+                android:textSize="20dp"
+                >
+            </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_nhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhap VN"
+        android:textSize="20dp"
+        >
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Danh sach nhan vien:"
+            android:textSize="30dp"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"
+            >
+        </TextView>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_xoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_forever_24">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
